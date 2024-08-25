@@ -1,0 +1,249 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.diff {
+	width: 10px;
+	height: 10px;
+}
+header{
+	background-color: crimson;
+}
+.navbar {
+	min-height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:0 24px;
+}
+/* .navdiv {
+	display: flex;
+	align-items: center;
+	justify-content: space-between; 
+}*/
+.holder {
+	/* font-size: 35px; */
+	/* font-weight: 600; */
+	width: 90px;
+	background-color: whitesmoke;
+	border-radius: 8px;
+}
+.nav-link{
+	transition: 0.7s;
+}
+.nav-link:hover{
+	color: dodgerblue;
+}
+li {
+	list-style: none;
+	/* display: inline-block; */
+}
+li a {
+	color: white;
+	text-decoration: none;
+	/* font-size: 18px;
+	font-weight: bold;
+	margin-right: 25px; */
+}
+.nav-menu{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+}
+.hamburger {
+	display: none;
+}
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: white;
+}
+/* .Roni {
+	height: 300px;
+	width: 300px;
+	margin-left: 500px;
+	border-radius: 200px;
+	margin-top: 10px;
+} */
+
+
+/* h1{
+	
+		text-align: center;
+		padding: 10px;
+		background-color: hotpink;
+
+} */
+
+@media only screen and (max-width: 600px) {
+	body{
+		font-family: Arial, sans-serif;
+		background-color: black;
+	}
+	.hamburger {
+		display: block;
+	}
+	.hamburger.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+	.hamburger.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+    .hamburger.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+	.nav-menu{
+		position:fixed;
+		left: 100%;
+		top:70px;
+		gap:0;
+		flex-direction: column;
+		background-color: #262626;
+		width:100px;
+		text-align: center;
+		transition: 0.3s;
+	}
+	.nav-menu.active{
+		left:0;
+	}
+ /* li{
+	margin:16px 0;
+ } */
+ .nav-item{
+ margin:16px 0;
+ }
+ .Roni {
+	height: 200px;
+	width: 200px;
+	margin-left: 100px;
+	border-radius: 200px;
+}
+h1{
+	text-align: center;
+	padding: 10px;
+	background-color: hotpink;
+     margin-bottom: 30px;
+}
+main{
+	padding: 20px;
+		color: lavender;
+}
+select{
+	margin-top: 20px;
+	width: 80px;
+	border-radius: 10px;
+	background-color: aqua;
+	margin-bottom: 20px;
+}
+.graph {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	display: inline-block;
+	border-radius: 40px;
+}
+.sfx {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	border-radius: 80px;
+}
+.aesthetic {
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+	border-radius: 100px;
+}
+img {
+	width: 10px;
+	height: 10px;
+}
+.Education {
+	display: inline-block;
+	text-align: center;
+	border:1px solid white;
+	border-radius: 30px;
+	background-color: #00ffff;
+		padding-left: 40px;
+		color: black;
+		border-radius: 6px;
+		margin-bottom: 20px;
+}
+.information {
+	display: inline-block;
+	text-align: center;
+	border:1px solid white;
+	border-radius: 20px;
+	background-color: lightsalmon;
+		padding-left: 50px;
+		color: black;
+		margin-bottom: 20px;
+}
+.Hobbies{
+display:grid;
+text-align: center;
+border: 1px solid white;
+border-radius: 20px;
+background-color: white;
+color: black;
+line-height: 20px;
+margin-bottom: 20px;
+}
+input,
+	textarea {
+		width: 60%;
+		padding: 5px;
+		font-size: 16px;
+		background-color: rgb(233, 200, 200);
+	}
+	form {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+	label {
+		font-weight: bold;
+		background-color: rgb(99, 87, 72);
+		width: 70px;
+	}
+	.enter {
+		width: 47px;
+		height: 30px;
+		color:black;
+		background-color: white;
+		cursor: pointer;
+		margin-left: 20px;
+	}
+	button:hover {
+		background-color: hsl(0, 0%, 33%);
+	}
+	footer {
+		margin-top: 20px;
+		text-align: center;
+		background-color: #aa8787;
+		color: #fff;
+		padding: 10px 0;
+	}
+	.twitter {
+		height: 30px;
+		width: 30px;
+		margin-left: 00px;
+	}
+	.instagram {
+		height: 30px;
+		width: 30px;
+		margin-left: 00px;
+	}
+	.WhatsApp {
+		height: 30px;
+		width: 30px;
+		margin-left: 00px;
+	}
+}
